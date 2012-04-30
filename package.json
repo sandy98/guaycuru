@@ -1,0 +1,19 @@
+{ "name" : "guaycuru"
+, "description" : "Static content web server built on top of Node Simple Router"
+, "tags" : ["http", "web server", "utils", "static content"]
+, "keywords": ["http", "web server", "utils", "static content"]
+, "version" : "0.0.1"
+, "homepage": "http://sandy98.github.com/guaycuru"
+, "author" : "Ernesto Savoretti <esavoretti@gmail.com>"
+, "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/sandy98/guaycuru.git"
+  }
+, "bugs" :
+  { "url" : "http://github.com/sandy98/guaycuru/issues" }
+, "engines" : ["node >= 0.6", "coffee-script >= 1.2"]
+, "main" : "./lib/guaycuru.js"
+, "bin"  : {"guaycuru": "./bin/guaycuru"}
+, "scripts": { "test": "./test/guaycuru" }
+, "dependencies": {"node-simple-router": ">= 0.1.2"}
+}
