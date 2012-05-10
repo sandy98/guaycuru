@@ -9,8 +9,8 @@ argv = process.argv.slice 2
 router = Router(
   static_route: process.cwd()
   served_by: "Guaycuru Web Server"
-  version: '0.0.1'
-  cgi_dir: argv[1] or 'cgi'
+  version: '0.0.2'
+  cgi_dir: argv[1] or 'cgi-bin'
 )
 
 router._500 = (req, res, path, message) ->
@@ -21,7 +21,7 @@ router._500 = (req, res, path, message) ->
               <p style="text-align: center;"><button onclick='history.back();'>Back</button></p>
           """)
 
-# CGI support (very basic, as of 2012-04-30)
+# CGI support (very basic, as of 2012-05-10)
 
 router.old_static = router.static
 

@@ -15,8 +15,8 @@
   router = Router({
     static_route: process.cwd(),
     served_by: "Guaycuru Web Server",
-    version: '0.0.1',
-    cgi_dir: argv[1] || 'cgi'
+    version: '0.0.2',
+    cgi_dir: argv[1] || 'cgi-bin'
   });
 
   router._500 = function(req, res, path, message) {
