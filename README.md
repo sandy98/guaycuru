@@ -26,7 +26,7 @@ Node Simple Router
 cd mywebdir
 guaycuru
 ```
-# That's it
+## That's it
 Well, almost. 
 As of current version (0.0.2) Guaycuru is able (and will attempt to) run cgi programs located under its cgi directory,
 which defaults to cgi-bin. This may be configured through the command line, along the lines of:
