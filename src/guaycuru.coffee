@@ -2,7 +2,6 @@
 
 Router = require 'node-simple-router'
 http   = require 'http'
-spawn  = require('child_process').spawn
 
 argv = process.argv.slice 2
 
