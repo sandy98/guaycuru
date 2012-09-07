@@ -15,5 +15,5 @@
 , "main" : "./lib/guaycuru.js"
 , "bin"  : {"guaycuru": "./bin/guaycuru"}
 , "scripts": { "test": "./test/guaycuru" }
-, "dependencies": {"node-simple-router": ">= 0.2.3"}
+, "dependencies": {"node-simple-router": ">= 0.2.4"}
 }
