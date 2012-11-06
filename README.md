@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/sandy98/guaycuru.png)](http://travis-ci.org/sandy98/guaycuru)
 # Guaycuru Web Server
 # Static Web Server built on top of Node Simple Router
 
