@@ -29,7 +29,7 @@ guaycuru
 ```
 ## That's it
 Well, almost. 
-As of current version (0.0.5) Guaycuru is able (and will attempt to) run cgi programs located under its cgi directory,
+As of current version (0.0.6) Guaycuru is able (and will attempt to) run cgi programs located under its cgi directory,
 which defaults to cgi-bin. This may be configured through the command line, along the lines of:
 guaycuru [port] [cgi directory]
 Port defaults to 8000 and cgi directory, as was previously mentioned, defaults to "cgi-bin" 
