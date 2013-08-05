@@ -13,8 +13,9 @@
   router = Router({
     static_route: process.cwd(),
     served_by: "Guaycuru Web Server",
-    version: '0.0.9',
-    cgi_dir: argv[1] || 'cgi-bin'
+    version: '0.1.0',
+    cgi_dir: argv[1] || 'cgi-bin',
+    software_name: 'guaycuru'
   });
 
   server = http.createServer(router);
