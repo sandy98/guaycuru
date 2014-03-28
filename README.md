@@ -34,9 +34,11 @@ which defaults to cgi-bin. This may be configured through the command line, alon
 guaycuru [port] [cgi directory]
 Port defaults to 8000 and cgi directory, as was previously mentioned, defaults to "cgi-bin" 
 
-2014-03-28  v 0.2.0 Added "gallery mode" when invoke with -g parameter. When invoked in that way it will perform a slide show of images in the working directory
-
+2014-03-28  v 0.2.0 Added "gallery mode" when invoked with -g parameter. When invoked in that way it will perform a slide show of images in the working directory
 instead of listing it.
+
+2014-03-28 v 0.2.1 Provided /dir url as alternative method of listing a directory instead of performing slide show. Useful for navigating between directories and
+ then performing the slide show when positionated in the chosen one. 
 
 
 ## Note
