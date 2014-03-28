@@ -8,7 +8,7 @@ argv = process.argv.slice 2
 router = Router(
   static_route: process.cwd()
   served_by: "Guaycuru Web Server"
-  version: '0.2.1'
+  version: '0.2.2'
   cgi_dir: argv[1] or 'cgi-bin'
   software_name: 'guaycuru'
   use_nsr_session: false
@@ -23,7 +23,7 @@ if '-g' in argv
 
 # Provide alternative urls to list directory
   router.get "/dir/:directory", (request, response) ->
-    router.dir "#{router.static_route}/#{request.params.directory}", "/#{request.params.directory}", response
+    router.dir "#{router.static_route}/#{unescape(request.params.directory)}", "/#{request.params.directory}", response
         
   router.get "/dir", (request, response) ->
     router.dir "#{router.static_route}", ".", response
@@ -37,7 +37,7 @@ server = http.createServer router
 
 server.on 'listening', ->
   addr = server.address() or {address: '0.0.0.0', port: argv[0] or 8000}
-  router.log "Serving web content at " + addr.address + ":" + addr.port  + " - PID: " + process.pid
+  router.log "Guaycuru v#{router.version} serving web content at " + addr.address + ":" + addr.port  + " - PID: " + process.pid
   router.log "Working directory: #{router.static_route}"
 
 clean_up = ->
