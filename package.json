@@ -2,7 +2,7 @@
 , "description" : "Static content web server built on top of Node Simple Router"
 , "tags" : ["http", "web server", "utils", "static content"]
 , "keywords": ["http", "web server", "utils", "static contents"]
-, "version" : "0.2.2"
+, "version" : "0.2.3"
 , "homepage": "http://sandy98.github.com/guaycuru"
 , "author" : "Ernesto Savoretti <esavoretti@gmail.com>"
 , "repository" :
