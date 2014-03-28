@@ -8,12 +8,17 @@ argv = process.argv.slice 2
 router = Router(
   static_route: process.cwd()
   served_by: "Guaycuru Web Server"
-  version: '0.1.2'
+  version: '0.2.0'
   cgi_dir: argv[1] or 'cgi-bin'
   software_name: 'guaycuru'
   use_nsr_session: false
 )
 
+# Test if it will run in gallery mode
+if '-g' in argv
+  console.log "Will run in gallery mode"
+  router.old_directory = router.directory
+  router.directory = router.gallery        
 
 #Ok, just start the server!
 

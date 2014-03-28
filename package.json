@@ -1,8 +1,8 @@
 { "name" : "guaycuru"
 , "description" : "Static content web server built on top of Node Simple Router"
 , "tags" : ["http", "web server", "utils", "static content"]
-, "keywords": ["http", "web server", "utils", "static content"]
-, "version" : "0.1.2"
+, "keywords": ["http", "web server", "utils", "static contents"]
+, "version" : "0.2.0"
 , "homepage": "http://sandy98.github.com/guaycuru"
 , "author" : "Ernesto Savoretti <esavoretti@gmail.com>"
 , "repository" :
@@ -14,6 +14,6 @@
 , "engines" : ["node >= 0.6"]
 , "main" : "./lib/guaycuru.js"
 , "bin"  : {"guaycuru": "./bin/guaycuru"}
-, "scripts": { "test": "cd test && guaycuru", "prepublish": "./compile.sh" }
+, "scripts": { "test": "cd test && guaycuru", "prepublish": "scripts/compile.sh" }
 , "dependencies": {"node-simple-router": "latest"}
 }
