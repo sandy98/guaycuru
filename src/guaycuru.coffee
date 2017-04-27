@@ -8,7 +8,7 @@ argv = process.argv.slice 2
 router = Router(
   static_route: process.cwd()
   served_by: "Guaycuru Web Server"
-  version: '0.2.3'
+  version: '0.2.4'
   cgi_dir: argv[1] or 'cgi-bin'
   software_name: 'guaycuru'
   use_nsr_session: false
